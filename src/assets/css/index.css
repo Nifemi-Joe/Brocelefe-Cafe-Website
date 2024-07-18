@@ -1,0 +1,184 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #FFEDD8;
+}
+
+button, a{
+  cursor: pointer;
+}
+
+ul,li,h1,h2,h3,h4,h5,h6,p{
+  margin: 0;
+}
+
+input, textarea {
+  height: 52px;
+  border: 2px solid #583101;
+  border-radius: 20px;
+  background: none;
+  padding-left: 55px;
+}
+
+textarea {
+  height: auto;
+}
+
+input::placeholder, textarea::placeholder{
+  color: #59554F;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.light-brown-bg {
+  background: #E7BC91;
+}
+
+.middle-brown-bg{
+  background: #BC8A5F;
+}
+
+.dark-brown-bg {
+  background: #583101;
+}
+
+.light-brown {
+  color: #E7BC91;
+}
+
+.dark-brown{
+  color: #583101;
+}
+
+.dark-blue {
+  color: #040404;
+}
+
+.leading-72 {
+  line-height: 72px;
+}
+
+button.bg-icon-dark:hover{
+  background: url("../../assets/images/arrow-light.svg") no-repeat #583101 95% 50%;
+  color: #E7BC91;
+}
+
+.bg-icon-dark {
+  background: url("../../assets/images/arrow.svg") no-repeat #E7BC91 95% 50%;
+  color: #583101;
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.coffee-item {
+  text-align: center;
+  padding: 10px;
+  transition: transform 0.5s ease;
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slick-center .coffee-item {
+  transform: scale(1.2);
+  position: relative;
+  top: -20px;
+}
+
+.coffee-image {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  margin: 0 auto;
+  transition: all 0.5s ease;
+}
+
+.coffee-name {
+  margin-top: 10px;
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.coffee-description {
+  font-size: 16px;
+  color: #040404;
+  font-weight: 300;
+}
+
+.slick-next, .slick-prev {
+  width: 58px !important;
+  height: 58px !important;
+  z-index: 1;
+}
+
+.slick-next {
+  right: 22px !important;
+}
+
+.slick-prev {
+  left: 22px !important;
+}
+
+.slick-next::before, .slick-prev::before {
+  font-size: 30px;
+  color: black;
+}
+
+.m-250 {
+  margin-top: 250px;
+}
+
+.rounded-50{
+  border-radius: 50px;
+}
+
+.slick-track {
+  display: flex !important;
+}
+
+.slick-slide {
+  /*width: 30% !important;*/
+}
+
+.bean-background{
+  background: url("../../assets/images/beans-bg.svg");
+}
+
+.w-30 {
+  width: 30%;
+}
+
+.h-430{
+  height: 430px;
+}
+
+.m--60{
+  margin-top: -60px;
+}
+
+button.light-brown-bg:hover{
+  color: #E7BC91;
+}
